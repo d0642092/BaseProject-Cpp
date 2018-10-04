@@ -3,10 +3,11 @@
 
 #ifndef TEST
 int main() {
-	//µù¸Ñ 
+	//µù¸Ñ
     printf("Rule Breaker!!!\n");
     printf("5 + 2 = %d\n", addNumber(5, 2));
     printf("%d\n", getTriangleType(3, 4, 5));
+    printf("%d\n", mul(3,4));
     return 0;
 }
 #endif // TEST
@@ -14,7 +15,9 @@ int main() {
 int addNumber(int a, int b) {
     return a + b;
 }
-
+int mul(int a,int b) {
+    return a * b;
+}
 int getTriangleType(int a, int b, int c) {
     if (a > b && a > c) {
         int temp = c; c = a; a = temp;
