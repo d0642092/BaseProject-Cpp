@@ -15,17 +15,17 @@ int main() {
 int addNumber(int a, int b) {
     return a + b;
 }
-<<<<<<< HEAD
+
 
 int delNumber(int a, int b) {
     return a - b;
 }
 
-=======
+
 int mul(int a,int b) {
     return a * b;
 }
->>>>>>> master
+
 int getTriangleType(int a, int b, int c) {
     if (a > b && a > c) {
         int temp = c; c = a; a = temp;
