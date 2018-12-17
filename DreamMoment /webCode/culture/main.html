@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#tosection1').click(function () {
+                $('html,body').animate({ scrollTop: $('#section1').offset().top }, 500);
+            });
+            $('#tosection2').click(function () {
+                $('html,body').animate({ scrollTop: $('#section2').offset().top }, 500);
+            });
+            $('#tosection3').click(function () {
+                $('html,body').animate({ scrollTop: $('#section3').offset().top }, 500);
+            });
+            $('#tosection4').click(function () {
+                $('html,body').animate({ scrollTop: $('#section4').offset().top }, 500);
+            });
+            $('#tosection5').click(function () {
+                $('html,body').animate({ scrollTop: $('#section5').offset().top }, 500);
+            });
+        })
+    </script>
+    <style>
+        .word{
+            font-size: 18px;
+            padding-top:50px;
+            height:100vh;
+            color:black;
+            
+        }
+        .div{
+            background-color:white;
+            width:10%;
+            height:100%;
+            text-align:center;
+            line-height: 30px;
+            
+            font-size: 18px;
+            
+            border: 3px solid black;
+            padding:5px;
+        }
+        #left{
+            padding-top:50px;
+            position: fixed;
+            left:0;
+        }
+        #right{
+            padding-top:50px;
+            position: fixed;
+            right:0;
+            
+        }
+        #center{
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+    </style>
+</head>
+
+<body id='top'>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#" style="font-size:40px font-family=Brush Script MT">DreamMoment</a>
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <ul class="nav navbar-nav navbar-right collapse navbar-collapse" id="collapsibleNavbar">
+                <li><a href="#">首頁</a></li>
+                <li class="active"><a herf="#">原住民文化</a></li>
+                <li><a href="#">捐助管道</a></li>
+                <li><a href="#">比賽連結</a></li>
+                <li><a href="#">學習資源</a></li>
+                <li><a href="#">志工招募</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="left" class="div">
+        <a id="#">阿美族</a><br>
+        <a id="#">泰雅族</a><br>
+        <a id="#">排灣族</a><br>
+        <a id="#">布農族</a><br>
+        <a id="#">卑南族</a><br>
+        <a id="#">魯凱族</a><br>
+        <a id="#">鄒族</a><br>
+        <a id="#">賽夏族</a><br>
+        <a id="#">達悟族</a><br>
+        <a id="#">邵族</a><br>
+        <a id="#">噶瑪蘭族</a><br>
+        <a id="#">太魯閣族</a><br>
+        <a id="#">撒奇萊雅族</a><br>
+        <a id="#">賽德克族</a><br>
+        <a id="#">拉阿魯哇族</a><br>
+        <a id="#">卡那卡那富族</a><br>
+    </div>
+    <div id="right" class="div">
+        <a id="tosection1">族群簡介</a><br>
+        <a id="tosection2">文化特質</a><br>
+        <a id="tosection3">宗教信仰</a><br>
+        <a id="tosection4">工藝</a><br>
+        <a id="tosection5">建築</a><br>
+    </div>
+
+    <!--試做相關文章-->
+    <!--
+    <div class="container-fluid">
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <img src="#" alt="image1">
+                <a class="nav-link" href="#">相關文章1</a>
+            </li>
+            <li class="nav-item">
+                <img src="#" alt="image2">
+                <a class="nav-link" href="#">相關文章2</a>
+            </li>
+            <li class="nav-item">
+                <img src="#" alt="image3">
+                <a class="nav-link" href="#top">相關文章3</a>
+            </li>
+        </ul>
+    </div>
+    -->
+
+    <!--標籤試做-->
+    <div id="center">
+        <div id="section1" class="container-fluid word">
+            <h1>族群簡介</h1>
+            <p>分佈於花蓮北部之奇萊山平原，南至台東及屏東之恆春半島等狹長之海岸平原及丘陵地區，
+                目前人口約有209,203人(107年3月)，是台灣原住民族中人數最多者。傳統社會制度以母系氏族組織為主，
+                男性被招贅後共居於女家，有關家庭親族事務與財產由女性戶長做主，
+                惟重要事務，如婚姻、分產則必由出贅之母舅返家共同決策；
+                然而，部落性之政治、司法、戰爭、宗教等公共事務，則由男性組織之男子年齡階級組織處理。
+                傳統祭儀以部落之豐年祭為主，其中過程以表達部落男子年齡階級新成員之加入意義為最重要。</p>
+        </div>
+        <div id="section2" class="container-fluid word">
+            <h1>文化特質</h1>
+            <p>社會組織以男子的年齡階級組織最為嚴密，每個階級有專屬的名稱、歌謠及工作，
+                如此連結成一個完整的部落組織，女子則隨著丈夫的年齡階級運作。每個部落有頭目一名，
+                由具領導能力的族人擔任，有一定的任期，期滿之後再遴選。</p>
+
+            <p> 傳統的阿美族社會是母系社會，舉凡家裡的大小事情均由女主人作決定。
+                部落性的政治活動或捕魚、建築才是男子的工作。
+                女子的強勢作風與男子的溫順性格在阿美族的家庭裡比比皆是。阿美族的男子也樂見家裡有一位女強人。</p>
+
+            <p> 早期，阿美族的男子入贅於女方家，在婚姻上有服役婚的觀念，也就是要為女方義務工作幾個月或一、二年。
+                在阿美人的想法裡，入贅是一件光榮的事情，男子可以藉此機會改善女方家的生活。
+                對於追求兩性平等的今日，相信會獲得許多女子的青睞。</p>
+
+            <p> 然而今日阿美人的社會也日漸受到漢人的影響，入贅婚比較少見。
+                家裡的經濟權也漸漸轉移到男子身上，母系社會的特質已漸漸淡化。</p>
+
+            <p> 阿美族社會的另一個特徵是嚴密的年齡階級組織，男子在十三、四歲時，必須進入集會所接受成為一個男人的訓練。
+                以二至五歲為一個階級，同一階級的男孩一起學習、生活，並住宿於集會所。
+                在集會所裡，同一個階級的同伴一起工作，遇有獎勵或處罰也是以一個階級為單位。
+                無形中更緊扣了同年齡階級的每一個男子，而這樣的關係是一生一世，直到離開人世為止。</p>
+        </div>
+        <div id="section3" class="container-fluid word">
+            <h1>宗教信仰</h1>
+            <p>阿美族原是個多神信仰的民族，各種活動、病痛均有專屬的神靈，且每一個神靈有固定的方位，
+                祭拜時均朝正確的方向，不得有失誤；kawas是核心的概念，泛指神祈、厲鬼、祖靈、動植物的精靈及人的靈魂，
+                是十分複雜的概念，尤其在當阿美族與外接觸後，kawas也可以用來指涉日本人與漢人的神明。</p>
+
+            <p> 在接受基督教之前，阿美族有許多占卜吉凶的方式，如夢兆、竹占、鳥占等，做為避邪、祈福的行為依據；
+                而在接受其他非本族信仰之後，對原本的傳統祭儀，如成年禮、婚禮、喪禮等都產生了一定影響。</p>
+
+            <p> 阿美族的宗教目前除了在台灣原住民中扮演重要角色的基督教外，還有日本的天理教、或是漢人的民間信仰等，
+                就算是基督教內部，也有各式各樣不同的宗教運動，同時也反映了該社會的多元性。</p>
+        </div>
+        <div id="section4" class="container-fluid word">
+            <h1>工藝</h1>
+            <p style="color:blue">服飾</p>
+            <p>女子以紅色及黑色為主要色系，男子則以藍色上衣、黑色短裙或紅色綁腿褲為主要裝扮。
+                男女的裙子均為刺繡精美的圖案。</p>
+
+            <p style="color:blue">陶器</p>
+            <p>阿美族的陶器有大型的運水罐、飯鍋、蒸鍋、酒杯、酒瓶和碗盤等，由婦女製作。
+                主要製作工具為木拍、礫石扥子和竹形刀。主要製陶法為拍扥法，以露天的陶窯燒製。
+                陶器也是生活中很重要的工具，雖然籐條可以裝物品，但是無法用來作為液體的物品裝置。
+                傳統上的製陶工作都是由女人來擔任，雖然大部分都是素陶，沒有再經過外表上的加工，
+                美觀上不足卻提升了生活上的方便跟實用性。而傳統的雕刻比較少有，多是用於裝飾，
+                但是有愈來越多的藝術家開始將傳統雕刻融入現代的藝術中。</p>
+
+            <p style="color:blue">籐編</p>
+            <p>工藝的表現上，阿美族在籐編技術上相當的發達，主要由部落的老人編藤，
+                然後再將藤條做成背框、畚箕、漁簍等各種生活工具。</p>
+        </div>
+        <div id="section5" class="container-fluid word">
+            <h1>建築</h1>
+            <p style="color:blue">（一）家屋建築</p>
+            <p>傳統上，阿美族以母系聯合家族為居住的理想型態，理想的家屋是長而寬的大房子，
+                內部大約可容納二十人左右。在建築材料方面，多以茅草為頂、木材為柱、豎竹為側壁，
+                室內有籐製編繞的高架連床。一般家屋通常居住十多年後就需拆除重建，屋頂上的茅草則每年需要增補，
+                每隔三、四年則需要全部重新更換。</p>
+
+            <p>建屋的程序包括：奠地基、準備建材、剷平地基、豎屋架、蓋屋頂、編壁與連床、安門、落成。
+                房屋落成時要殺豬祭神，結束後再集體出去捕魚。整修或重建家屋通常會利用九、十月水稻收割後的農閒時期。
+                在阿美族的傳統社會中，家屋（loma'）的含意除了房屋的實體建築外，
+                還需要包括兩項條件：一是要建立爐灶（parod），二是要住有家人。爐灶為生火處，
+                傳統作法為立三塊石頭組成，此處為家人煮飯、取暖、作息與團聚之處，也是家屋的重心，
+                象徵一個家庭的生命泉源。以往若家人要遷移至其它地方，母親會將這三塊灶石與自織的布、陶甕作為贈送。
+                同時要用籐將這三塊灶石綁好帶走，缺一不可。</p>
+        </div>
+    </div>
+</body>
+
+</html>

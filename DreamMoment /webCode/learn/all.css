@@ -1,0 +1,13 @@
+.navbar-custom{
+  background-color: #1E90FF;
+}
+
+/*change the brand and text color */
+.nav-link {
+    color: white;
+}
+/* change the link color and add padding for height */
+.navbar-custom .navbar-nav .nav-link {
+    color: rgba(255,255,255,.5);
+    padding: 1rem 1rem;
+}

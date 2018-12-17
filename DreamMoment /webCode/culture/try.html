@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>原住民文化</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../donation/.css/navbar.css">
+    <style>
+        #book{
+            
+            margin-right: 15%;
+            margin-left: 15%;
+            margin-bottom: 10%;
+            height: 70vh;
+            background-color:white;
+            border: 5px solid burlywood;
+        }
+        #taiwan{
+            width:50%;
+            height:100%;
+            float: left;
+            border: 5px solid burlywood;
+            text-align: center;
+        }
+        #introduction-case{
+            width:50%;
+            height:100%;
+            float: right;
+            border: 5px solid burlywood;
+            text-align: left;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $("#1").click(function () {
+                if ($("#doll").attr("src") == "") {
+                    $("#location").slideUp(100, function () { $("#location").text("位於:") }).slideDown(1000);
+                    $("#introduction").slideUp(100, function () { $("#introduction").text("簡介:") }).slideDown(1000);
+                }
+
+                $("#top").slideUp(1000, function () { $("#top").text("賽夏族") }).slideDown(1000);
+                $("#doll").slideUp(1000, function () { $("#doll").attr("src", "image/10.jpg"); }).slideDown(1000);
+                $("#location-text").slideUp(1000, function () { $("#location-text").text("賽夏族位置") }).slideDown(1000);
+                $("#introduction-text").slideUp(1000, function () { $("#introduction-text").text("賽夏族介紹") }).slideDown(1000);
+            });
+            $("#2").click(function () {
+                if ($("#doll").attr("src") == "") {
+                    $("#location").slideUp(100, function () { $("#location").text("位於:") }).slideDown(1000);
+                    $("#introduction").slideUp(100, function () { $("#introduction").text("簡介:") }).slideDown(1000);
+                }
+
+                $("#top").slideUp(1000, function () { $("#top").text("泰雅族") }).slideDown(1000);
+                $("#doll").slideUp(1000, function () { $("#doll").attr("src", "image/1.jpg"); }).slideDown(1000);
+                $("#location-text").slideUp(1000, function () { $("#location-text").text("泰雅族位置") }).slideDown(1000);
+                $("#introduction-text").slideUp(1000, function () { $("#introduction-text").text("泰雅族介紹") }).slideDown(1000);
+
+            });
+            $("#3").click(function () {
+                if ($("#doll").attr("src") == "") {
+                    $("#location").slideUp(100, function () { $("#location").text("位於:") }).slideDown(1000);
+                    $("#introduction").slideUp(100, function () { $("#introduction").text("簡介:") }).slideDown(1000);
+                }
+
+                $("#top").slideUp(1000, function () { $("#top").text("賽德克族") }).slideDown(1000);
+                $("#doll").slideUp(1000, function () { $("#doll").attr("src", "image/0.jpg"); }).slideDown(1000);
+                $("#location-text").slideUp(1000, function () { $("#location-text").text("賽德克族位置") }).slideDown(1000);
+                $("#introduction-text").slideUp(1000, function () { $("#introduction-text").text("賽德克族介紹") }).slideDown(1000);
+
+            });
+        })
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md bg-primary navbar-dark">
+        <div class="container-fluid">
+            <!--<a href="#" class="navbar-header">
+                      <img src="" alt="icon" id="main">&nbsp;
+                </a> -->
+            <h5 id="topic"> DreamMoment </h5>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                <!-- justify-content-end 靠右-->
+                <ul class="navbar-nav">
+                    <li class="nav-item active"><a class="nav-link" href="#">原住民文化</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">捐助管道</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">學習資源</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">比賽資訊</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">志工招募</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="d-flex row">
+        <div class="p-2 flex-fill col-lg-5 col-sm-4 col-4">
+            <hr style="margin-left: 0px;">
+        </div>
+        <div class="p-2 flex-fill col-lg-2 col-sm4 col-4"><img src="../../image/icon/archery.png" id="icon" width="50px"
+                height="50px"><b>原住民文化</b></div>
+        <div class="p-2 flex-fill col-lg-5 col-sm-4 col-4">
+            <hr style="margin-right: 0px;">
+        </div>
+    </div>
+    <div id="book">
+        <div id="taiwan">
+            <img src="image/taiwan.jpg" usemap="#taiwanmap" height="100%">
+            <map name="taiwanmap">
+                <area shape="rect" coords="180,30,230,150" id="1">
+                <!--賽夏族-->
+                <area shape="rect" coords="250,0,300,120" id="2">
+                <!--泰雅族-->
+                <area shape="rect" coords="130,90,170,210" id="3">
+                <!--賽德克族-->
+                <!--
+                    賽夏族:180,30,230,150;
+                    泰雅族:250,0,300,120;
+                    賽德克族:130,90,170,210;
+                -->
+            </map>
+        </div>
+        <div id="introduction-case">
+            <h2 style="text-align:center" id="top"></h2><br>
+            <div style="height:40%">
+                <img src="" id="doll" align=left style="float:left;height: 100%">
+                <h3 id="location"></h3>
+                <p id="location-text"></p>
+            </div>
+            <div class="container-fluid" style="height:50%">
+                <h2 id="introduction"></h2>
+                <p id="introduction-text"></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

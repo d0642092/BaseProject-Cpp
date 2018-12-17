@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>志工招募</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>   
+	<link rel=stylesheet type="text/css" href="../navbar.css/all.css">
+	<!-- <link rel=stylesheet type="text/css" href="./volunteer.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+
+<!-- justify-content-between -->
+
+	<!-- 至左對齊 -->
+ <nav class="navbar navbar-expand-sm navbar-custom">
+
+    <a class="navbar-brand" href="#">DreamMoment</a>
+    <!-- <a class="navbar-brand" href="#">DreamMoment</a> -->
+    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"  aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <div class="collapse navbar-collapse" id="navbarNavDropdown"> 
+      <ul class="navbar-nav ml-auto">
+
+        <li class="nav-item dropdown">
+  			<a class="nav-link" href="../culture/culture.html">原住民文化</a>	
+        </li>
+
+        <li class="nav-item active">
+          <a class="nav-link" href="../donation/donation.html">捐助管道</a>
+        </li>
+
+        <li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"href="../learn/learn.html">學習資源</a>
+			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		        <a class="dropdown-item" href="#">Action</a>
+		        <a class="dropdown-item" href="#">Another</a>
+		      </div>
+		</li>
+
+		<li class="nav-item active">
+			<a class="nav-link" href="../volunteer/volunteer.html">志工招募</a>
+		</li>
+
+      </ul>
+    </div>
+</nav>
+
+<br>
+<div class="row justify-content-center align-items-center">
+	<p>
+		<hr  size=100 class="upon" align="left">
+		<img class="Icon" src="image\food.png" alt="trophy">
+		<span id="compitionText">志工招募</span>
+		<hr class="upon" align="right">
+	</p>
+</div>
+<br>
+<br>
+
+<div class="container">
+	<div >
+		<form>
+            <div class="form-group">
+                <label for="username">志工姓名：</label>
+                <input type="text" class="form-control" id="username" required>
+            </div>
+            <div class="form-group">
+                <label for="userEnglishName">英文姓名：</label>
+                <input type="text" class="form-control" id="English" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+          	<div class="form-group">
+                <label for="Country">國籍</label>
+                <input type="Country" class="form-control" id="Country" required>
+            </div><br>
+            性別:  <input type="radio" name="sex" value="male" checked> 男
+        		<input type="radio" name="sex" value="famale"> 女
+				<input type="radio" name="sex" value="other"> 其他<br>
+				<br>
+			<div class="form-group">
+                <label for="phone">聯絡電話/手機</label>
+                <input type="text" class="form-control" id="phone" required>
+            </div>
+            <button type="button" class="btn btn-primary" id="btn-submit">送出
+            </button>
+		</form>
+	</div>
+</div>
+	<script>
+		$(document).ready(function(){
+	            $("#btn-submit").click(function() {
+	            	var check=$("input[type=checkbox]:checked").length;
+					if(check==0 || check==1){
+						alert("您勾選選項");
+					}else{
+						window.location.href="https://sites.google.com/site/itsancku/home";
+					}
+                });
+			});
+
+
+	</script>
+
+	
+</div>
+</body>
+</html>
