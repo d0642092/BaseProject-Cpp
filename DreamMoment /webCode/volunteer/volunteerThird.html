@@ -39,17 +39,12 @@
         </li>
 
         <li class="nav-item dropdown">
-			<a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"href="../learn/learn.html">學習資源</a>
-			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		        <a class="dropdown-item" href="#">Action</a>
-		        <a class="dropdown-item" href="#">Another</a>
-		      </div>
+			   <a class="nav-link" href="../donation/donation.html">學習資源</a>
 		</li>
 
 		<li class="nav-item active">
 			<a class="nav-link" href="../volunteer/volunteer.html">志工招募</a>
 		</li>
-
       </ul>
     </div>
 </nav>
@@ -68,22 +63,22 @@
 
 <div class="container">
 	<div >
-		<form>
+		<form action="/volunteerThird" method="POST">
             <div class="form-group">
                 <label for="username">志工姓名：</label>
-                <input type="text" class="form-control" id="username" required>
+                <input type="text" class="form-control" name="username" required>
             </div>
             <div class="form-group">
                 <label for="userEnglishName">英文姓名：</label>
-                <input type="text" class="form-control" id="English" required>
+                <input type="text" class="form-control" name="English" required>
             </div>
             <div class="form-group">
                 <label for="email">Email:</label>
-                <input type="email" class="form-control" id="email" required>
+                <input type="email" class="form-control" name="email" required>
             </div>
           	<div class="form-group">
                 <label for="Country">國籍</label>
-                <input type="Country" class="form-control" id="Country" required>
+                <input type="Country" class="form-control" name="Country" required>
             </div><br>
             性別:  <input type="radio" name="sex" value="male" checked> 男
         		<input type="radio" name="sex" value="famale"> 女
@@ -91,29 +86,14 @@
 				<br>
 			<div class="form-group">
                 <label for="phone">聯絡電話/手機</label>
-                <input type="text" class="form-control" id="phone" required>
-            </div>
-            <button type="button" class="btn btn-primary" id="btn-submit">送出
-            </button>
+                <input type="text" class="form-control" name="phone" required>
+      </div>
+      <button type="submit" class="btn btn-primary"  id="btn-submit">送出
+      </button>
 		</form>
 	</div>
 </div>
-	<script>
-		$(document).ready(function(){
-	            $("#btn-submit").click(function() {
-	            	var check=$("input[type=checkbox]:checked").length;
-					if(check==0 || check==1){
-						alert("您勾選選項");
-					}else{
-						window.location.href="https://sites.google.com/site/itsancku/home";
-					}
-                });
-			});
 
-
-	</script>
-
-	
 </div>
 </body>
 </html>
