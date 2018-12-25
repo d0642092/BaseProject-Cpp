@@ -4,7 +4,7 @@ const port = 3000;
 const bodyParser = require('body-parser');
 const urlencodedParser = bodyParser.urlencoded({ extended: false });
 var nodemailer = require('nodemailer');
-app.use(express.static(__dirname + '/public'));
+app.use(express.static('../public'));
 var peopleNumber=0
 
 
