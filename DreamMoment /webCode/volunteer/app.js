@@ -20,9 +20,23 @@ app.get('/volunteerSecond', function(req, res) {
  app.get('/volunteerThird', function(req, res) {
      res.sendfile('./volunteerThird.html');
  });
- // app.get('/Fourth', function(req, res) {
- //     res.sendfile('./Fourth.html');
- // });
+
+ app.get('/compition', function(req, res) {
+     res.sendfile('./compition.html');
+ });
+app.get('/culture', function(req, res) {
+     res.sendfile('./culture.html');
+ });
+app.get('/donation', function(req, res) {
+     res.sendfile('./donation.html');
+ });
+app.get('/learn', function(req, res) {
+     res.sendfile('./learn.html');
+ });
+app.get('/main', function(req, res) {
+     res.sendfile('./main.html');
+ });
+
 app.post("/volunteerThird", urlencodedParser, function(req, res) {
   var target = req.body.email;
   console.log('email:%s',target);
