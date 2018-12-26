@@ -57,7 +57,7 @@ function datashow(number) {
     }
 
     $("#top").slideUp(1000, function () { $("#top").text(group[number]) }).slideDown(1000);
-    $("#doll").slideUp(1000, function () { $("#doll").attr("src", "../public/image/" + image[number] + ".jpg"); }).slideDown(1000);
+    $("#doll").slideUp(1000, function () { $("#doll").attr("src", "image/" + image[number] + ".jpg"); }).slideDown(1000);
     $("#location-text").slideUp(1000, function () { $("#location-text").text(loc[number]) }).slideDown(1000);
     $("#introduction-text").slideUp(1000, function () { $("#introduction-text").text(text[number]) }).slideDown(1000);
 
