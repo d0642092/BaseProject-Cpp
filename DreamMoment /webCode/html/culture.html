@@ -1,31 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>原住民文化</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-</head>
-<body>
-  <nav class="navbar navbar-expand-sm bg-danger navbar-dark">
-  <ul class="navbar-nav">
-    <li class="nav-item active">
-      <a class="nav-link" href="#">Active</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link disabled" href="#">Disabled</a>
-    </li>
-  </ul>
-</nav>
+<html>
 
+<head>
+    <title>原住民文化</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../public/navbar.css/all.css">
+    <link rel="stylesheet" href="../public/css/culture.css">
+</head>
+
+<body>
+    <nav class="navbar navbar navbar-expand-sm navbar-custom">
+        <a href="main.html" class="navbar-brand"> DreamMoment </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="culture.html">原住民文化</a></li>
+                <li class="nav-item"><a class="nav-link" href="donation.html">捐助管道</a></li>
+                <li class="nav-item"><a class="nav-link" href="learn.html">學習資源</a></li>
+                <li class="nav-item"><a class="nav-link" href="compition.html">比賽資訊</a></li>
+                <li class="nav-item"><a class="nav-link" href="volunteer.html">志工招募</a></li>
+            </ul>
+
+        </div>
+    </nav>
+    <br>
+    <div class="row justify-content-center align-items-center">
+        <p>
+            <hr size=100 class="upon" align="left">
+            <img src="../public/image/archery.png" class="Icon">
+            <span id="compitionText">原住民文化</span>
+            <hr class="upon" align="right">
+        </p>
+    </div>
+    <br>
+    <div id="book">
+        <div id="taiwan">
+            <img src="../public/image/Artboard.png" usemap="#taiwanmap" id="taiwanjpg" class="img-fluid center">
+        </div>
+        <div id="phoneSize"></div>
+        <map id="cirMap" name="taiwanmap">
+            <area shape="poly" coords="282,387,273,390,261,396,258,409,256,425,250,446,254,461,249,477,243,488,236,508,235,529,239,541,250,549,259,555,283,491,292,478,305,454,325,438,329,415,342,380,345,367,324,396,315,413"
+                id="a">
+            <area shape="poly" coords="344,215,363,219,385,219,376,240,371,250,365,259,369,270,362,282,359,308,352,330,349,357,341,362,335,374,329,390,322,411,314,414,307,404,300,398,288,393,282,382,275,373,285,360,286,350,296,349,299,340,309,336,310,320,307,310,317,292,317,272,321,262,324,256,318,249,328,240,332,234,335,225"
+                id="b">
+            <area shape="poly" coords="409,117,398,119,395,126,388,132,382,136,375,139,363,145,362,155,352,160,342,165,337,175,331,192,326,198,326,209,339,211,351,215,358,218,367,216,382,216,388,221,390,201,398,194,399,188,397,161,397,152,396,143,399,132"
+                id="c">
+            <area shape="poly" coords="198,459,194,515,213,531,232,567,232,594,248,601,257,592,260,574,262,555,245,550,241,537,242,522,238,507,243,488,256,477,259,458,250,457,236,453,225,452,213,459"
+                id="d">
+            <area shape="poly" coords="188,517,167,493,170,485,158,459,157,449,183,448,195,439,216,415,222,406,226,390,235,386,245,380,253,370,261,366,267,363,275,364,274,373,282,384,267,393,258,423,251,437,256,451,249,454,244,458,235,451,228,455,213,458,198,458,193,474"
+                id="e">
+            <area shape="poly" coords="269,357,251,370,239,379,231,385,223,387,222,395,207,395,204,381,201,372,189,368,174,371,168,377,161,381,154,384,148,375,150,363,150,354,159,351,168,347,173,342,182,337,187,330,202,331,208,338,219,338,231,342,238,337,244,338,247,343,252,357,261,357"
+                id="f">
+            <area shape="poly" coords="223,281,230,272,240,271,251,259,259,254,273,251,288,242,297,239,313,236,326,235,317,246,325,254,321,260,315,270,317,286,311,296,306,310,310,315,309,331,299,337,298,346,287,350,282,357,278,361,253,355,249,348,249,338,236,332,224,331,222,316,228,305,221,298"
+                id="g">
+            <area shape="poly" coords="199,240,212,252,221,262,234,269,245,266,253,259,261,254,269,254,280,247,292,243,302,240,315,237,326,234,335,227,339,218,336,212,324,208,317,204,308,210,297,212,289,221,272,221,266,217,264,225,249,225,240,216,228,212,223,204,215,212,206,224"
+                id="h">
+            <area shape="poly" coords="223,200,242,221,255,222,264,222,271,218,280,220,291,217,297,212,311,203,308,193,302,192,290,192,285,186,288,177,279,173,270,169,265,163,260,156,254,160,252,166,245,168,240,174,233,184,228,208,227,195"
+                id="i">
+            <area shape="poly" coords="269,135,275,123,288,129,298,134,303,142,315,147,319,158,326,166,328,175,332,180,328,189,323,195,321,201,313,200,306,191,292,191,286,191,286,178,272,165,267,155,273,151,281,146,278,141"
+                id="j">
+            <area shape="poly" coords="264,155,270,151,281,149,279,143,272,141,264,136,263,144" id="k">
+            <area shape="poly" coords="312,95,329,104,329,116,321,119,325,130,330,140,339,149,342,159,336,169,334,174,328,175,322,167,315,159,318,150,311,148,299,141,294,134,290,128,283,123,272,124,276,115,285,105,300,101"
+                id="l">
+            <area shape="poly" coords="317,91,334,102,332,114,324,121,328,130,333,135,342,148,342,157,356,157,349,161,361,148,368,142,379,136,388,134,393,127,397,119,404,113,415,109,408,103,404,92,395,94,389,96,391,102,381,103,375,100,370,94,368,89,375,86,371,80,365,69,355,65,343,69,342,81,335,87,328,90"
+                id="m">
+            <area shape="poly" coords="377,85,367,90,374,98,384,101,387,94" id="n">
+        </map>
+        <div id="introduction-case">
+
+            <div id="group" style="width:100%;">
+                <h3 id="h3"></h3>
+                <div id="del"></div>
+            </div>
+
+            <div id="datashowarea" style="height:100%;width:100%;">
+
+                <h3 style="text-align:center" id="top"></h3><br>
+
+                <div style="height:40%;" id="location-div">
+
+                    <img src="" id="doll">
+
+                    <h4 id="location"></h4>
+                    <p id="location-text" style="white-space: pre-line;font-size:13px;"></p>
+
+                </div>
+
+                <div style="height:50%;">
+                    <h3 id="introduction"></h3>
+                    <p id="introduction-text" style="white-space: pre-line;"></p>
+                    <button class="btn btn-primary" style="float:right;" type="button" id="back" onclick="goBack()">返回</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="../public/json/adjustMap.js"></script>
 </body>
+
 </html>

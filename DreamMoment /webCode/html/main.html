@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>首頁</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../public/navbar.css/all.css">
+    <script>
+        $(document).ready(function () {
+            $('#tostart').click(function () {
+                $('html,body').animate({ scrollTop: $('#start').offset().top }, 500);
+            });
+            $('#toicon').click(function () {
+                $('html,body').animate({ scrollTop: $('#icon').offset().top }, 500);
+            });
+        })
+    </script>
+    <style>
+        #start{
+            background-image: url("../public/image/main.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+        }
+        .middle{
+            display:flex;
+            justify-content: center;
+        }
+        #toicon{
+            border: none;
+            background-color: rgba(0, 225, 0, 1);
+            color:white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 40px;
+            padding: 20px 60px;
+            font-size: 20px;
+        }
+        #icon{
+            height:100vh;
+            padding-top: 5%;
+        }
+        #nav{
+            background-color: rgba(0,0,0,0.0);
+        }
+        .iconimage{
+            width:40%;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+        .icon{
+            width:15%;
+            height:80%;
+            border: solid 1px;
+            border-radius: 20px;
+            text-align: center;
+            background-color: white;
+            margin-right: 10px;
+            margin-left: 10px;
+            margin-top:10px;
+            margin-bottom:10px;
+        }
+
+        #title{
+            font-size: 6em;
+            padding-top:5%;
+            color: white;
+        }
+        .rwdtxt {
+            font-size: 0.5em;
+            
+        }
+        @media (min-width: 600px) and (max-width: 1200px) {
+            .rwdtxt {
+            font-size: calc(0.8em + (1.3-1.2) * ((100vw - 600px) / (1200 - 600)));
+            
+            }
+        }
+        @media (min-width: 1200px) {
+            .rwdtxt {
+                font-size: 1.3em;
+                
+            }
+        }
+        
+    </style>
+</head>
+
+<body id='top'>
+
+
+
+    <div id="start" class="container-fluid">
+        <nav class="navbar navbar-expand-sm navbar-custom" id="nav">
+            <a href="#" class="navbar-brand"> DreamMoment </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="culture.html">原住民文化</a></li>
+                    <li class="nav-item"><a class="nav-link" href="donation.html">捐助管道</a></li>
+                    <li class="nav-item"><a class="nav-link" href="learn.html">學習資源</a></li>
+                    <li class="nav-item"><a class="nav-link" href="compition.html">比賽資訊</a></li>
+                    <li class="nav-item"><a class="nav-link" href="volunteer.html">志工招募</a></li>
+                </ul>
+
+            </div>
+        </nav>
+        <div class="middle" id="title">
+            <p class="rwdtxt" id="name">DreamMoment</p>
+        </div>
+        <div class="middle">
+            <button id="toicon">Start</button>
+        </div>
+    </div>
+    <div id="icon" class="container-fluid">
+        <div class="middle row">
+            <div class="icon col-lg-3 col-md-6 col-10">
+                <a href="culture.html"><img src="../public/image/archery.png" class="iconimage"></a>
+                <p>原住民文化</p>
+            </div>
+            <div class="icon col-lg-3 col-md-6 col-10">
+                <a href="donation.html"><img src="../public/image/food.png" class="iconimage"></a>
+                <p>捐助管道</p>
+            </div>
+        </div>
+        <div class="middle row">
+            <div class="icon col-lg-3 col-md-6 col-10">
+                <a href="learn.html"><img src="../public/image/books.png" class="iconimage"></a>
+                <p>學習資源</p>
+            </div>
+
+            <div class="icon col-lg-3 col-md-6 col-10">
+                <a href="compition.html"><img src="../public/image/trophy.png" class="iconimage"></a>
+                <p>比賽資訊</p>
+            </div>
+
+            <div class="icon col-lg-3 col-md-6 col-10">
+                <a href="volunteer.html"><img src="../public/image/handshake.png" class="iconimage"></a>
+                <p>志工招募</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
